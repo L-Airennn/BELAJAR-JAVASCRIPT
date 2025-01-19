@@ -1,0 +1,47 @@
+<!--- 
+- FUNCTION LETS US REUSE CODE 
+
+#SYNTAX RULES 
+1. Can't use special words excample : function
+2. Can't start with a number
+3. Can't use special characters exept: $_
+ 
+Best practice = use camelCase
+
+#
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function</title>
+</head>
+<body>
+  <script>
+   /*
+    function  function1(){
+     
+      This is called Function body, only creates a function and it doesnt run the code inside
+     
+      console.log('Hallo');
+      console.log(2+2);
+    }
+
+     This is calling the function (running the function) (executing the function)
+    
+    function1();
+    function1();
+  */
+
+  function calculateTax(parameter1, taxPercent/* Parameter = put a value into a function */){ 
+    console.log(parameter1 * taxPercent);
+  }
+
+  calculateTax(2000, 0.5);
+  calculateTax(5000, 0.1);
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function compareProduct(product1,product2){
+      if (product1.price < product2.price){
+        return product1;
+      } else {
+        return product2;
+      }
+    }
+
+    product1 ={
+      name : 'Basketballs',
+      price : 2090,
+    };
+
+    product2 ={
+      name : 'Socks',
+      price : 9000
+    };
+
+    console.log(compareProduct(product1,product2));
+
+  </script>
+  
+</body>
+</html>
