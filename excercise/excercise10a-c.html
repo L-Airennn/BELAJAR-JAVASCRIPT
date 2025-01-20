@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EXCERCISE 10</title>
+</head>
+<body>
+  <style>
+ 
+    .button{
+      background-color: rgb(255, 216, 20);
+      margin : 25px;
+      padding: 8px 40px;
+      border: none;
+      border-radius:30px;
+      font-family: Arial;
+      cursor: pointer;
+    }
+
+    .request{
+      background-color: black;
+      color: white;
+      margin-left:25px ;
+      margin-right: 20px;
+      padding : 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .schedule{
+      background-color: rgb(230, 230, 230);
+      margin: px ;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+  </style>
+  
+  <button class="button">Add to cart</button>
+  
+  <p></p>
+
+  <button class="request">Request Now</button>
+  <button class="schedule">Schedule for later</button>
+
+  <button class="js-button">Test</button>
+  <p></p>
+  <script>
+    const button= document.querySelector('.js-button');
+    console.log(button.classList.contains('js-button'));
+  </script>
+
+</body>
+</html>
