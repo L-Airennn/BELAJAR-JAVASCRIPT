@@ -3,19 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EXC 10D</title>
-  <link rel="stylesheet" href="../style/style10f.css">
+  <title>DOM Projects</title>
+  <style>
+    body {
+        font-family:Arial;
+    }
 
+    .subscribe-button {
+      border: none;
+      background-color:black;
+      color:white;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 15px;
+      padding-right: 15px;
+      font-weight:bold;
+      border-radius:50px;
+      cursor: pointer;
+      margin-bottom: 30px;
+    }
+
+    .is-subscribed {
+      background-color: rgb(240, 240, 240);
+      color:black;
+    }
+
+    .cost-input{
+      font-size: 15px;
+      padding: 10px;
+    }
+
+    .calculate-button{
+      background-color:green;
+      color:white;
+      border:none;
+      font-size: 15px;
+      padding: 12px 15px;
+      cursor : pointer;
+    }
+
+    .error-warning{
+
+    }
+
+  </style>
 </head>
 <body>
 
-  <button onclick= "toggleClass()" class ="toggle-button Gaming-button">Gaming</button>
+  <p>Amazon Shipping Calculator</p>
+  <p>Orders under $40 = +10$ shippinng</p>
+  <p>Orders Over $40 = FREE shipping</p>
+  <input placeholder="Cost of order" class = "js-cost-input cost-input" onkeydown="
+      handleCostkeydown(event);
+  ">
+  <button onclick="
+      calculateTotal();
+  "class="calculate-button">Calculate</button>
+<p class="js-total-cost"></p>
 
-  <button onclick="toggleClass2()" class="toggle-button Music-button">Music</button>
-  
-  <button onclick="toggleClass3()" class="toggle-button Tech-button">Tech</button>
+<P class="js-error error-message"></P>
 
-  <script src="../scripts/script10f.js"></script>
+  <script>
 
+    
+    /*Function agar bisa running kode dengan menggunakan "enter" */
+    function handleCostkeydown(event){
+          if (event.key === 'Enter'){
+              calculateTotal();
+          }
+    }
+
+    function calculateTotal(){
+      const inputElement = document.querySelector('.js-cost-input');
+      let cost = Number (inputElement.value);
+
+      document.querySelector('.js-total-cost').innerHTML= '';
+      document.querySelector('.js-error').innerHTML= '';
+
+      if (cost < 0) {
+        document.querySelector('.js-error')
+          .innerHTML= 'Error : cost cannot be less than $0';
+
+          return;
+      }
+
+      if (cost< 40){
+        cost = cost + 10;
+      }  
+
+      document.querySelector('.js-total-cost')
+        .innerHTML = `$${cost}`;
+    }
+
+  </script>
 </body>
 </html>
