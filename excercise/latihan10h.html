@@ -42,10 +42,6 @@
       cursor : pointer;
     }
 
-    .error-message{
-    color:red;
-    }
-
   </style>
 </head>
 <body>
@@ -60,9 +56,7 @@
       calculateTotal();
   "class="calculate-button">Calculate</button>
 <p class="js-total-cost"></p>
-
-<P class="js-error error-message"></P>
-
+<p class="js-error-massage error-massage"></p>
   <script>
 
     
@@ -77,17 +71,21 @@
       const inputElement = document.querySelector('.js-cost-input');
       let cost = Number (inputElement.value);
 
-      document.querySelector('.js-total-cost').innerHTML= '';
-      document.querySelector('.js-error').innerHTML= '';
+      document.querySelector('.js-total-cost')
+        .innerHTML='';
 
-      if (cost < 0) {
-        document.querySelector('.js-error')
-          .innerHTML= 'Error : cost cannot be less than $0';
+      document.querySelector('.js-error-massage')
+        .innerHTML='';
 
-          return;
+      if (cost < 0){
+        document.querySelector('.js-error-massage')
+          .innerHTML='ERROR: cost cannot be less than $0';
+
+
+        return;
       }
 
-      if (cost< 40){
+      if (cost<= 40){
         cost = cost + 10;
       }  
 
