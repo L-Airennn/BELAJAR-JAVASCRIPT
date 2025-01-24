@@ -1,0 +1,15 @@
+.classToggle{
+  background-color: rgb(240, 240, 240);
+  border:none;
+  border-radius: 4px;
+  padding:6px 10px;
+  margin-left: 15px;
+  cursor: pointer;
+
+}
+
+
+.is-toggled{
+  background-color: black;
+  color:white;
+}
