@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>latihan 10 d</title>
+  <style>
+    .is-toggle{
+      background-color: rgb(240, 240, 240);
+      border:none;
+      border-radius: 4px;
+      padding:6px 10px;
+      margin: 30px;
+      cursor: pointer;
+
+    }
+
+
+    .is-toggled{
+      background-color: black;
+      color:white;
+    }
+  </style>
+</head>
+<body>
+  <button class="js-button is-toggle" onclick="isToggled();">Gaming</button>
+
+  <script>
+    function isToggled(){
+      const button = document.querySelector('.js-button');
+
+      if (!button.classList.contains('is-toggled')){button.classList.add('is-toggled');
+      } else {
+        button.classList.remove('is-toggled');
+      }
+      
+    }
+  </script>
+  
+</body>
+</html>
