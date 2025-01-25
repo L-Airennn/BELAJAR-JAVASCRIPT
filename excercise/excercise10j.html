@@ -1,21 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EXC 10D</title>
-  <link rel="stylesheet" href="../style/style10f.css">
+<html>
+  <head>
+    <link rel="stylesheet" href="10j.css">
+  </head>
+  <body>
 
-</head>
-<body>
-
-  <button onclick= "toggleClass()" class ="toggle-button Gaming-button">Gaming</button>
-
-  <button onclick="toggleClass2()" class="toggle-button Music-button">Music</button>
+    <p class="js-hasilKalkulasi calculationcs" 
   
-  <button onclick="toggleClass3()" class="toggle-button Tech-button">Tech</button>
+    ></p>
 
-  <script src="../scripts/script10f.js"></script>
+    <p>
+      <button class="js-buttonnmbr" onclick = "
+        updateCalculations('1');
+        ">1</button>
 
-</body>
+      <button class="js-buttonnmbr" onclick ="
+      updateCalculations('2');
+      ">2</button>
+
+      <button class="js-buttonnmbr" onclick = "
+      updateCalculations('3');
+      ">3</button>
+
+      <button class= "js-buttonop" onclick = "
+      updateCalculations('+');
+      ">+</button>
+    </p>
+
+    <p>
+      <button class="js-buttonnmbr" onclick = "
+        updateCalculations('4');
+        ">4</button>
+
+      <button class="js-buttonnmbr" onclick ="
+      updateCalculations('5');
+      ">5</button>
+
+      <button class="js-buttonnmbr" onclick = "
+      updateCalculations('6');
+      ">6</button>
+
+      <button class= "js-buttonop" onclick = "
+      updateCalculations('-');
+      ">-</button>
+    </p>
+
+    <p>
+      <button class="js-buttonnmbr" onclick = "
+        updateCalculations('7');
+        ">7</button>
+
+      <button class="js-buttonnmbr" onclick ="
+      updateCalculations('8');
+      ">8</button>
+
+      <button class="js-buttonnmbr" onclick = "
+      updateCalculations('9');
+      ">9</button>
+
+      <button class= "js-buttonop" onclick = "
+      updateCalculations('*');
+      ">*</button>
+    </p>
+
+    <p>
+      <button class="js-buttonnmbr" onclick = "
+        updateCalculations('0');
+        ">0</button>
+
+      <button class="js-buttonnmbr" onclick ="
+      updateCalculations('.');
+      ">.</button>
+
+      <button class="js-buttonnmbr" onclick = "
+      calculation = eval(calculation);
+      displayCalculatorValue();
+
+      localStorage.setItem('calculationz',calculation); 
+      ">=</button>
+
+      <button class= "js-buttonop" onclick = "
+      updateCalculations('/');
+      ">/</button>
+    </p>
+
+    <p>
+      <button class="clear" onclick =" 
+      calculation='';
+      displayCalculatorValue();
+
+      localStorage.setItem('calculationz',calculation);
+      ">Clear</button></p>
+
+    
+    
+    <script src="10j.js"></script>
+  </body>
 </html>
