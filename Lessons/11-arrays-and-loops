@@ -1,0 +1,66 @@
+# Syntax rule for Arrays
+1. Start with the "[" and end with "]"
+2. Inside we can put a list of values, and separate each with a comma ",". We can also write array on multiplr line like this:
+
+const myArray = [
+  10,         =>index 0
+  20,         =>index 1
+  30          =>index 2
+  ];
+
+to get a value inside the array, we can use the "[]", like: 
+
+console.log (myArray[1]);
+
+number "[1]" is called the index, it represent the position in the array that we want to get. Inside an array we can type any type of value.
+
+- An array itself is also a value, that means we can save the array in variable like this:  
+
+const myArray = [
+  10,         =>index 0
+  20,         =>index 1
+  30          =>index 2
+  ];
+
+or even save it in an array like this:
+
+[1, 'hello', true, {'socks'},[1, 2]];
+
+3. because array are just the type of an object, Array also have properties and methods. 
+
+- One useful properties is called ".length", example:
+
+console.log(myArray.length);
+
+- next useful methodd of an array is, called ".push()", this methods adds a value to the end of the array. example:
+
+myArray.push(100); // this will add the 100 to the end of variable myArray
+
+- the last method is called ".splice()"
+this removes a value from an array, a splice takes two numbers.
+  1.index we want to remove for example:
+  2. Number of values to remove
+
+  myArray.splice(0, 2);
+
+  this code will remove the value of "10" and "20"
+
+  
+
+for example:
+
+myArray.splice();
+
+
+
+
+
+
+<script>
+  const myArray = [10, 20, 30];
+  console.log(myArray);
+
+  console.log(myArray[1]);
+  myArray[0] = 99;
+  console.log(myArray);
+</script>
