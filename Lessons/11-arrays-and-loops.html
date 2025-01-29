@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Array and Loops</title>
 </head>
+
 <body>
   <script>
 
@@ -36,19 +38,45 @@
       
       */
 
-      let i = 1; /* => loop variable */
+    let i = 1; /* => loop variable */
 
-      while (i <= 5)/* => loop condition */ {
-        console.log(i); 
-        i ++;/* => increment step*/
-      } 
+    while (i <= 5)/* => loop condition */ {
+      console.log(i);
+      i++;/* => increment step*/
+    }
 
-      /* Each time we run this loop, this is called iteration, so in this loop, we did five iteration (We run this code five time) */
+    /* Each time we run this loop, this is called iteration, so in this loop, we did five iteration (We run this code five time) */
 
-      for (let i = 1; i<= 5; i++) {
-        console.log(i);
-      }
+    for (let i = 1; i <= 5; i++) {
+      console.log(i);
+    }
+
+    let randomNumber = 0;
+
+    while (randomNumber < 0.5) {
+      randomNumber = Math.random();
+    }
+
+    console.log(randomNumber);
+
+    /* 
+    # While vs For loop ?
+
+    Standard loop => for
+    Non-Standard loop => while
+    example :     
+    
+    let randomNumber = 0;
+
+    while (randomNumber < 0.5) {
+      randomNumber = Math.random();
+    }
+
+    console.log(randomNumber);
+
+    */
   </script>
-  
+
 </body>
+
 </html>
