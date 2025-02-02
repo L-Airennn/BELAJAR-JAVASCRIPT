@@ -3,9 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>latihan 11 a</title>
+  <title>latihan 11 c</title>
 </head>
 <body>
+  <script>
+    function swapArray (array){
+      const lastIndex = array.length -1;
+
+      const lastValue= array[lastIndex];
+      const firstValue= array[0];
+
+      array[0] = lastValue;
+      array [lastValue] = firstValue;
+
+      return array;
+    }
+
+    console.log(swapArray([1, 2, 5, 15, 4, 75]));
+
+    console.log(swapArray(['hi', 'hallo', 'hey']));
+
+  </script>
   
 </body>
 </html>
