@@ -3,12 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Excercise 11 b</title>
+  <title>Excercise 11 c</title>
 </head>
 <body>
 
-
   <script>
+    function arraySwap(array){
+      let first = array[0];
+      let last = array[array.length -1];
+
+      array[0] = last;
+      array[array.length -1] = first;    
+    
+    return array;
+    }
+
+    console.log(arraySwap([1, 2, 3, 4]));
     
   </script>
   
