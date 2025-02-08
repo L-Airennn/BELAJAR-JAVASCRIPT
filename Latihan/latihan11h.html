@@ -8,14 +8,13 @@
 <body>
   <script>
     function addOne(array){
-      let nums = [];
+      const result = [];
 
-      for(let i = 0; i<array.length; i++){
-        nums.push(array[i] + 1);
-
+      for(let i = 0; i <array.length; i++){
+        result.push(array[i] + 1)
       }
-      
-      return nums;
+
+      return result;
     }
 
     console.log(addOne([1, 2, 4]));
