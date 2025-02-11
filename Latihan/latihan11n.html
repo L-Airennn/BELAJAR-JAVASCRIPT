@@ -3,33 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Latihan 11 f</title>
+  <title>Latihan 11 N</title>
 </head>
 <body>
   <script>
-    function minMax(nums){
-      let result = {
-        min : null,
-        max : null
-      };
+    function countWords(words){
+      const result = {};
 
-      for(let i = 0; i <nums.length; i++){
-        const value = nums[i];
+      for(let i = 0; i <words.length; i++){
+        const word = words[i];
 
-        if (result.min == null || value < result.min){
-          result.min = value;
-        }
-
-        if(result.max == null || value > result.max){
-          result.max = value;
+        if (!result[word]){
+          result [word]= 1;
+        } else {
+          result[word]++;
         }
       }
 
       return result;
     }
 
-    console.log(minMax([]));
-    console.log(minMax([3]));
+    console.log(countWords(['apple','grape', 'apple', 'apple', 'watermelon']));
   </script>
 </body>
 </html>
