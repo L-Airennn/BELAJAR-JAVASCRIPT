@@ -1,6 +1,15 @@
+/* How do we group the name and due date together? 
 
+Answer: We can do that using an object
 
-const todoList=['make dinner', 'wash dishes'];
+*/
+
+const todoList=[{
+  name :'make dinner', 
+  dueDate : '2024-12-22'
+}, {
+  name: 'wash dishes',
+  dueDate: '2024-12-22'}];
 
 renderTodoList();
 
@@ -12,10 +21,13 @@ function renderTodoList() {
 
  
   for(let i=0; i< todoList.length; i++){
-    const todo = todoList[i];
+    const todoObject= todoList[i];
+    //const name = todoObject.name;
+    //const dueDate = todoObject.dueDate;
+    const { name, dueDate } = todoObject; /*This is shortcut, called Destructuring */
     const html = `
     <p>
-      ${todo} 
+      ${name} , ${dueDate}
       <button onclick = "
         todoList.splice (${i}, 1);
         renderTodoList();
@@ -36,6 +48,8 @@ function renderTodoList() {
   function addTodo(){
     const inputElement= document.querySelector('.js-name-input');
     const name = inputElement.value;
+
+    const dateInputElement = document.querySelector('.js-due-date-input');
     
     todoList.push(name);
     console.log(todoList);
