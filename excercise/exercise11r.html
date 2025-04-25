@@ -8,24 +8,25 @@
 <body>
   <script>
     function removeEgg(foods){
-      const result = [];
-      
-      for(let i=0; i<foods.length; i++){
-        if (foods[i] === 'egg'){
+
+      let result = [];
+      let eggRemoved = false;
+
+      for(let i = 0; i<foods.length; i++){  
+
+        if (foods[i] === 'egg' && !eggRemoved){
+          eggRemoved= true;
           continue;
+        }
+
+
+        result.push(foods[i]);
       }
 
-      result.push(foods[i]);
-
+      return result;
     }
 
-    return result;
-
-  }
-
-  console.log(removeEgg(['egg','apple','egg','egg','ham']));
-  
-  
+    console.log(removeEgg(['egg','apple','egg','egg','ham']));
 
   </script>
   
