@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 11 t</title>
+</head>
+<body>
+  <script>
+    function removeEgg(foods){
+      const foodsCopy = foods.slice();
+      const reversedFoods = foodsCopy.reverse();
+
+      const result = [];
+      let eggRemoved= 0;
+
+      for(let i = 0; i<reversedFoods.length; i++){
+        if(reversedFoods[i] == 'egg' && eggRemoved < 2){
+          eggRemoved ++;
+          continue;
+        }
+
+        result.push(reversedFoods[i]);
+      }
+
+      return result.reverse();
+    }
+
+    const foods = ['egg','apple','egg','egg','ham']
+
+    console.log(removeEgg(foods));
+    console.log(foods);
+
+  </script>
+  
+</body>
+</html>
