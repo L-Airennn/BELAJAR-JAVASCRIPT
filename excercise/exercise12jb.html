@@ -12,6 +12,41 @@
     };
 
     console.log(luasPP(2, 5));
+
+    //      mencaari tahu apakah angka tersebut ganjil
+
+    const ganjil = (angka) => {
+      if (angka % 2 !== 0){
+        console.log ('Angka yang kamu input = '+angka  +' adalah angka Ganjil');
+      } else {
+        console.log('angka yang kamu input = ' + angka + ' adalah angka Genap');
+      }
+    };
+
+    console.log(ganjil(3));
+
+    // Mengubah huruf menjadi huruf besar
+
+    const upperCase = (kata) => kata.toUpperCase();
+
+    console.log(upperCase('belajar'));
+
+    // mengubah huruf menjadi huruf kecil semua
+
+    const lowerCase = (kata2) => kata2.toLowerCase();
+    
+    console.log(lowerCase('HALLLOOO INII GWWWW'));
+
+    // Menjumlahkan semua angka dalam array
+
+    const sumArray = (arr) => {
+      let total = 0;
+      arr.forEach(num => total += num);
+      return total;
+
+    };
+
+    console.log(sumArray([1, 2, 3, 4]));
   </script>
 </body>
 </html>
