@@ -8,6 +8,8 @@
 <body>
   <script>
   /*
+  //menghitung luas lingkaran 
+
     const luasLingkaran = (angka) => {
       let phi = 3.14;
       return phi * angka * angka;
@@ -20,6 +22,10 @@
     console.log(LuasLingkaran2(8));
 
     */
+
+    /*
+
+    //mengecek ganjil atau genapnya suatu angka
 
     const cekGanjilGenap = angka => {
       if (angka % 2 !== 0){
@@ -37,6 +43,60 @@
     console.log(cekGanjilGenap1(5));
     console.log(cekGanjilGenap1(4));
 
+    */
+
+    /*
+    // mengecek angka positif, negatif ataupun nol
+
+    const cekBilangan = angka => {
+      if (angka > 0){
+        return 'Positif';
+      } else if (angka < 0){
+        return 'Negatif';
+      } else {
+        return '0';
+      }
+    }
+
+    console.log(cekBilangan(5));
+    console.log(cekBilangan(-3));
+    console.log(cekBilangan(0));
+
+    const cekBilangan2 = angka => angka > 0 ? 'Positif' : angka < 0 ? 'Negatif' : 'Nol';
+
+    console.log(cekBilangan2(5));
+    console.log(cekBilangan2(-3));
+    console.log(cekBilangan2(0));
+    */
+
+    /*
+    // menghitung luas persegi panjang
+
+    const hitungLuasPersegiPanjang = (angka1, angka2) => {
+      return angka1 * angka2;
+    };
+
+    console.log (hitungLuasPersegiPanjang(5, 10));
+    console.log (hitungLuasPersegiPanjang(7, 3));
+    */
+
+    /*
+    // menghitung diskon
+
+    const hitungDiskon = (harga, diskon) => harga *  (1 - diskon/100);
+    console.log(hitungDiskon(100000, 20));
+
+    */
+
+    //menghitung volume balok
+
+    /*
+    const hitungVolumeBalok = (panjang, lebar, tinggi) => panjang * lebar * tinggi;
+
+    console.log(hitungVolumeBalok(5,3,2));
+    console.log(hitungVolumeBalok(10, 4, 6));
+
+    */
   </script>
 </body>
 </html>
