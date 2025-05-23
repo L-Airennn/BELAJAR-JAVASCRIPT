@@ -6,23 +6,23 @@
   <title>latihan 12 e</title>
 </head>
 <body>
-  <button class="js-button" onclick="
-    updateButton(); 
+
+  <button class = "js-button" onclick="
+    updateChart();  
   ">Add to Cart
   </button>
 
   <p class="js-add"></p>
 
   <script>
-    function updateButton(){
+    function updateChart (){
       const button = document.querySelector('.js-add');
 
-      button.innerHTML = 'Added';
+      button.innerHTML ='Added';
 
-      setTimeout(function(){
-        button.innerHTML = '';
+      setTimeout(() =>{
+        button.innerHTML ='';
       }, 2000);
-      
     }
   </script>
 </body>
