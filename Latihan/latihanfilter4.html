@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    /*
+    function filterLongWords (kata){
+      return kata.filter((kta) => {
+        if (kta.length > 6){
+          return true;
+        }
+        
+        return false;
+      });
+    }
+
+    console.log(filterLongWords(['apel', 'pisang', 'semangka', 'jeruk', 'melon']));
+    */
+
+    function filterLongWords (kata){
+      return kata.filter((kta) => kta.length > 6);
+    }
+
+    console.log(filterLongWords(['apel', 'pisang', 'semangka', 'jeruk', 'melon']));
+  </script>
+</body>
+</html>
