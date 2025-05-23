@@ -17,13 +17,14 @@
     let timeoutId;
 
     function updateButton(){
+
       const button = document.querySelector('.js-add');
 
       button.innerHTML = 'Added';
 
       clearTimeout(timeoutId);
 
-      timeoutId = setTimeout(function(){
+      timeoutId = setTimeout(() =>{
         button.innerHTML = '';
       }, 2000);
       
