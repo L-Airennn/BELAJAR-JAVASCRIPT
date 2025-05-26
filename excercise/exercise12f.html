@@ -6,19 +6,17 @@
   <title>latihan 12 e</title>
 </head>
 <body>
-  <button class="js-button" onclick="
-    updateButton(); 
-  ">Add to Cart
-  </button>
+  <button class="js-button">Add to Cart</button>
 
   <p class="js-add"></p>
 
   <script>
     let timeoutId;
 
-    function updateButton(){
-
-      const button = document.querySelector('.js-add');
+    document.querySelector('.js-button')
+      .addEventListener ('click', () => {
+      
+       const button = document.querySelector('.js-add');
 
       button.innerHTML = 'Added';
 
@@ -27,8 +25,7 @@
       timeoutId = setTimeout(() =>{
         button.innerHTML = '';
       }, 2000);
-      
-    }
+      });
   </script>
 </body>
 </html>
