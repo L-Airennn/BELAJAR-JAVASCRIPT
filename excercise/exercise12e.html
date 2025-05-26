@@ -7,15 +7,15 @@
 </head>
 <body>
 
-  <button class = "js-button" onclick="
-    updateChart();  
-  ">Add to Cart
+  <button class = "js-button">Add to Cart
   </button>
 
   <p class="js-add"></p>
 
   <script>
-    function updateChart (){
+    document.querySelector('.js-button')
+      .addEventListener('click', () =>{
+
       const button = document.querySelector('.js-add');
 
       button.innerHTML ='Added';
@@ -23,7 +23,8 @@
       setTimeout(() =>{
         button.innerHTML ='';
       }, 2000);
-    }
+      
+      });
   </script>
 </body>
 </html>
