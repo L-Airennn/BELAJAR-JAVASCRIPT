@@ -7,19 +7,17 @@
 </head>
 <body>
 
-  <button class="js-button" onclick="
-    updateButton();
-  ">Start
-  </button>
+  <button class="js-button">Start</button>
 
   <script>
-    function updateButton(){
-      const button = document.querySelector('.js-button');
+    document.querySelector('.js-button')
+      .addEventListener ('click', () => {
+        const button = document.querySelector('.js-button');
 
       setTimeout(() =>{
         button.innerHTML = 'Finishded';
       }, 1000);
-    }
+    });
   </script>
 
 </body>
