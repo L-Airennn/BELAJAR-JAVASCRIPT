@@ -69,7 +69,7 @@ document.querySelectorAll('.js-add-to-cart')
         }
       });
 
-      
+      document.querySelector(`.js-quantity-selector-${productId}`)
 
       if (matchingItem){
         matchingItem.quantity += 1;
