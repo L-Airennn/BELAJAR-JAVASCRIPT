@@ -73,9 +73,6 @@ document.querySelectorAll('.js-add-to-cart')
 
       const quantity = Number(quantitySelector.value);
 
-      const addedMessage = document.querySelector(
-        `.js-added-to-cart-${productId}`);
-
       if (matchingItem){
         matchingItem.quantity += quantity;
       } else {
@@ -93,6 +90,9 @@ document.querySelectorAll('.js-add-to-cart')
       document.querySelector('.js-cart-quantity')
         .innerHTML = cartquantity;
 
-      console.log(cart);
+      const addedMessage = document.querySelector(
+        `.js-added-to-cart-${productId}`);
+
+      addedMessage.classList.add('added-to-cart-visible');
     });
   });

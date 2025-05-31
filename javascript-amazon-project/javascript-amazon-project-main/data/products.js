@@ -661,7 +661,7 @@ const products = [
     image: "images/products/umbrella.jpg",
     name: "Umbrella yo",
     rating: {
-      stars: 4.9,
+      stars: 4.5,
       count: 5557
     },
     priceCents: 1100,
@@ -676,7 +676,7 @@ const products = [
     image: "images/products/backpack.jpg",
     name: "Backpack Sigma",
     rating: {
-      stars: 4.8,
+      stars: 5,
       count: 7757
     },
     priceCents: 1170,
