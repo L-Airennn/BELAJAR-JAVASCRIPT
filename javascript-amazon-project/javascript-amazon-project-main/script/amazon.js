@@ -73,7 +73,8 @@ document.querySelectorAll('.js-add-to-cart')
 
       const quantity = Number(quantitySelector.value);
 
-
+      const addedMessage = document.querySelector(
+        `.js-added-to-cart-${productId}`);
 
       if (matchingItem){
         matchingItem.quantity += quantity;
