@@ -656,5 +656,35 @@ const products = [
       "apparel",
       "mens"
     ]
+  }, {
+    id: "id1",
+    image: "images/products/umbrella.jpg",
+    name: "Umbrella yo",
+    rating: {
+      stars: 4.9,
+      count: 5557
+    },
+    priceCents: 1100,
+    keywords: [
+      "umbrella",
+      "payung",
+      "apparel",
+      "mens"
+    ]
+  },  {
+    id: "id2",
+    image: "images/products/backpack.jpg",
+    name: "Backpack Sigma",
+    rating: {
+      stars: 4.8,
+      count: 7757
+    },
+    priceCents: 1170,
+    keywords: [
+      "backpack",
+      "tas",
+      "apparel",
+      "mens"
+    ]
   }
 ];
